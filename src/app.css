@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply text-neutral-800 bg-lime-50/20;
+}
+
+.fluid-font {
+    font-size: clamp(0.625em, 1.5vw, 1rem);
+}
+
+.fluid-h2 {
+    font-size: clamp(1.125rem, 2.75vw, 3rem);
+}
+.tippy-box {
+ 
+    @apply rounded-b-xl shadow-lg !important;
+}
+

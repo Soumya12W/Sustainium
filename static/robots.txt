@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /privacy-policy
+Disallow: /disclaimer
+Disallow: /acceptance-use-policy
+Disallow: /terms-of-use
+
+User-agent: *
+Allow: /
+Sitemap: https://www.sustainium.io/sitemap.xml 
