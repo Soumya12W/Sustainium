@@ -13,13 +13,13 @@
 </script>
 
 <a href={slug}>
-    <article class="flex flex-col h-full shadow-md rounded-md hover:scale-105 transition-transform hover:shadow-lg cursor-pointer group my-4">
+    <article class="flex flex-col bg-gray-200 h-full shadow-md shadow-gray-300 rounded-md hover:scale-105 transition-transform hover:shadow-lg cursor-pointer group my-6">
         <div class="w-full h-[15em] relative">
         <span class='absolute top-2 left-2 border border-white text-white font-semibold rounded-2xl p-1'>{event}</span>    
         <img src={image} alt={imageAlt} class="w-full h-[15em] rounded-t-md bg-slate-300" />
-        <span class='absolute bottom-0 left-0 w-2/5 bg-gray-300 text-gray-700 text-center font-semibold rounded-t-lg p-2'>{duration}</span>
+        <span class='absolute bottom-0 left-0 w-2/5 bg-gray-200 text-gray-700 text-center font-semibold rounded-t-lg p-2'>{duration}</span>
         </div>
-        <div class="card-content p-4 flex flex-col gap-2 pb-10 ">
+        <div class="card-content  p-4 flex flex-col gap-2 ">
 
             <h2 class="text-lg font-bold group-hover:text-green-500">{title}</h2>
             <p class="text-base text-gray-700">{description}...</p>
