@@ -174,21 +174,23 @@
 
 </script>
 
-<section class="container py-20 px-20">
-    <div class="relative rounded-2xl overflow-hidden mb-24">
-        <img src={eventcover} alt="cover" class="w-full h-[200px]  object-cover">
-        <h1 class="absolute inset-0 flex items-center justify-center text-white font-bold text-3xl lg:text-5xl bg-black bg-opacity-50 p-4">
-            Live Events
-        </h1>
-    </div> 
+<div class="relative  overflow-hidden mb-10">
+    <img src={eventcover} alt="cover" class="w-full h-[200px]  object-cover">
+    <h1 class="absolute inset-0 flex items-center justify-center text-white font-bold text-3xl lg:text-5xl bg-black bg-opacity-50 p-4">
+        Live Events
+    </h1>
+</div> 
+
+<section class="container flex flex-col justify-center items-center py-20 px-20">
+
     
-    <div class="flex justify-start space-x-4 mb-10">
-        <button class={`px-4 py-2 rounded-2xl ${selectedTab === 'All' ? 'bg-green-500 text-white' : 'bg-gray-300'}`} on:click={() => selectedTab = 'All'}>All</button>
-        <button class={`px-4 py-2 rounded-2xl ${selectedTab === 'Recorded' ? 'bg-green-500 text-white' : 'bg-gray-300'}`} on:click={() => selectedTab = 'Recorded'}>Recorded</button>
-        <button class={`px-4 py-2 rounded-2xl ${selectedTab === 'Upcoming' ? 'bg-green-500 text-white' : 'bg-gray-300'}`} on:click={() => selectedTab = 'Upcoming'}>Upcoming</button>
+    <div class="flex justify-start space-x-4 mb-10 self-start">
+        <button class={`px-4 py-2 rounded-2xl ${selectedTab === 'All' ? 'bg-green-500 text-black' : 'bg-gray-300'}`} on:click={() => selectedTab = 'All'}>All</button>
+        <button class={`px-4 py-2 rounded-2xl ${selectedTab === 'Recorded' ? 'bg-green-500 text-black' : 'bg-gray-300'}`} on:click={() => selectedTab = 'Recorded'}>Recorded</button>
+        <button class={`px-4 py-2 rounded-2xl ${selectedTab === 'Upcoming' ? 'bg-green-500 text-black' : 'bg-gray-300'}`} on:click={() => selectedTab = 'Upcoming'}>Upcoming</button>
     </div>
 
-    <article class='grid grid-cols-1 md:grid-cols-3  2xl:grid-cols-5 my-10  gap-6 justify-center'>
+    <article class='grid grid-cols-1 md:w-2/3 2xl:grid-cols-5 my-10 gap-6 justify-center'>
         {#each filteredData as blogData, index}
         <BlogCard1 
             title={blogData.title}

@@ -13,16 +13,16 @@
 </script>
 
 <a href={slug}>
-    <article class="flex flex-col bg-gray-200 h-full shadow-md shadow-gray-300 rounded-md hover:scale-105 transition-transform hover:shadow-lg cursor-pointer group my-6">
+    <article class="flex flex-col  bg-gray-200 h-[420px] shadow-md shadow-gray-300 rounded-md hover:scale-105 transition-transform hover:shadow-lg cursor-pointer group my-6">
         <div class="w-full h-[15em] relative">
-        <span class='absolute top-2 left-2 border border-white text-white font-semibold rounded-2xl p-1'>{event}</span>    
+        <span class='absolute top-2 left-2  bg-gray-200 text-gray-700 font-semibold rounded-2xl p-1'>{event}</span>    
         <img src={image} alt={imageAlt} class="w-full h-[15em] rounded-t-md bg-slate-300" />
         <span class='absolute bottom-0 left-0 w-2/5 bg-gray-200 text-gray-700 text-center font-semibold rounded-t-lg p-2'>{duration}</span>
         </div>
         <div class="card-content  p-4 flex flex-col gap-2 ">
 
             <h2 class="text-lg font-bold group-hover:text-green-500">{title}</h2>
-            <p class="text-base text-gray-700">{description}...</p>
+            <p class="text-base text-gray-900">{description}...</p>
             <div class="flex justify-between items-center" >
                 <div class="flex gap-2 items-center">
                     <div>
@@ -32,7 +32,7 @@
                <!--  <i class="ri-more-2-fill"></i> -->
     
             </div>
-            <button class="bg-[#2b2b2b]  text-white text-sm hover:text-green-500 py-2 mt-4 mb-2 px-6 rounded-md md:rounded-lg shadow w-40 " >{buttonName} </button> 
+            <button class="bg-[#2b2b2b]  text-white text-sm hover:text-green-500 py-2 mt-4  px-6 rounded-md md:rounded-lg shadow w-40 " >{buttonName} </button> 
         </div>
     </article>
 </a>
